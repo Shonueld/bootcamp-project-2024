@@ -1,0 +1,380 @@
+:root {
+  /* variables */
+  --cg-black: rgb(30, 32, 32);
+  --cg-blue: rgb(36, 94, 255);
+  --cg-grey: rgb(243, 243, 243);
+  --cg-white: rgb(255, 255, 255);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--cg-grey);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+/* CSS for navigation */
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the whole navbar */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #d0423a;
+  position: relative; /* Allows you to position the logo and other elements */
+}
+
+.logoImage
+{
+  width: 60px; /* Adjust the size as needed */
+   height: 60px; /* Make sure width and height are equal */
+     border-radius: 50%; /* This makes it circular */
+      border: 3px solid #ee8983; /* Add a border with color and thickness */
+        object-fit: cover; /* Ensure the image scales nicely inside the container */
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  padding: 15px;
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; /* Makes the image and text stack vertically */
+  align-items: center; /* Ensures the content is centered within the project */
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px; /* Space between image and title */
+}
+
+
+.project h3 {
+  font-size: 1.5rem;
+  margin: 10px 0; /* Adds space above and below the title */
+  color: #333;
+}
+
+.project ul {
+  padding-left: 20px; 
+  text-align: left; 
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.project p, .project ul {
+  font-size: 1rem;
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 30px; 
+  z-index: 10;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff6347;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: var(--cg-white);
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 3px 2px 2px black; /* Creates a soft black outline around the text */
+  display: inline-block; /* This allows transform to work correctly */
+  min-width: 50px; /* Optional: set a minimum width */
+}
+
+
+.navbar a:hover {
+  background-color: var(--cg-black); /* Highlight background color on hover */
+  color: var(--cg-white); /* Keep the text color */
+  text-decoration: none; /* Ensure no underline on hover */
+  transform: scale(1.2); /* Enlarge text to 120% of its original size */
+}
+
+.navbar a:active {
+  color: var(--cg-blue);
+}
+
+.logo a {
+  font-family: Georgia;
+}
+
+.logo a:hover {
+  text-decoration: None;
+}
+
+main {
+  padding: 40px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Georgia;
+}
+
+/* CSS for portfolio grid */
+
+
+
+.item-link {
+  width: 70%;
+
+  /* Debug border */
+  /* border: 2px solid red; */
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  flex-basis: 50px;
+  flex-grow: 2;
+
+  /* Debug border */
+  /* border: 2px solid black; */
+}
+
+.project-details {
+  display: flex;
+  background-color: var(--cg-white);
+  width: 30%;
+  height: 500px;
+  flex-shrink: 1;
+  padding: 0 20px;
+  margin: 0px;
+  line-height: 1.5;
+  overflow: scroll;
+
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  /* Debug border */
+  /* border: 2px solid green; */
+}
+
+.project-details a {
+  color: var(--cg-black);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.project-details a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.project-details {
+  font-weight: lighter;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CSS for home page */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.about-image img {
+  max-width: 300px;
+  border:2px solid #ff4b4b;
+  border-radius: 300px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* CSS for resume page */
+.resume {
+  max-width: 800px; 
+  background-color: var(--cg-white);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Space around the content */
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.section {
+  margin-bottom: 20px; /* Space between sections */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff3f3; /* Section Background (off red) */
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space below the title */
+}
+
+
+.button {
+  background-color: var(--cg-black);
+  border: none;
+  color: var(--cg-white);
+
+  font-family: monospace;
+
+  padding: 5px 7px;
+  text-align: center;
+
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: var(--cg-blue);
+}
+
+.resume h2 {
+  font-family: Georgia;
+}
+
+/* CSS for contact form */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Georgia;
+  font-weight: bold;
+}
+
+.contact-links {
+  text-align: center; /* Center the logos */
+  margin: 20px 0; /* Space above and below */
+}
+
+.contact-logo {
+  width: 40px; /* Set the desired width */
+  height: auto; /* Keep aspect ratio */
+  margin: 0 15px; /* Space between logos */
+  transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.contact-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+/* spacing for form */
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* CSS for footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: var(--cg-white);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  color:#333;
+}
+
