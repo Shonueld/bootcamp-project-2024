@@ -62,7 +62,7 @@ function appendBlogsToPage(blogs: Blog[]) {
         img.src = blog.image;
         img.alt = blog.imageAlt;
 
-        // Create a link to the blog (optional)
+        // Create a link to the blog
         const link = document.createElement('a');
         link.href = blog.slug;
         link.textContent = 'Read More';
