@@ -2,20 +2,20 @@
 // blog.ts (or blog.js if not using TypeScript)
 const blogs = [
     {
-        title: "First Blog",
-        date: "10/20/2024",
-        description: "Welcome to my first blog post!",
-        image: "pathHere",
-        imageAlt: "A welcoming image",
-        slug: "blog/hello",
+        title: "Algorithmic Health Insurance, Fair or Not?",
+        date: "10/17/2024",
+        description: "Companies are beginning to use algorithms to determine whether insurance claims should be denied or pended for review, is this ok?",
+        image: "algohiring.png",
+        imageAlt: "An image of an algorithm",
+        slug: "blogs/algorithmic-hiring.html",
     },
     {
-        title: "Second Blog",
-        date: "10/21/2024",
-        description: "Another exciting update!",
-        image: "pathHere",
-        imageAlt: "An image of excitement",
-        slug: "blog/blog2",
+        title: "AI Doctors, Who is Responsible?",
+        date: "10/14/2024",
+        description: "We are entering a new age where human doctors may be replaced by AI. However, who bears the responsibility if complications occur?",
+        image: "ai-doctor.png",
+        imageAlt: "An image of a robot doctor",
+        slug: "blogs/algorithmic-hiring.html",
     }
 ];
 // Function to dynamically append blogs to the page

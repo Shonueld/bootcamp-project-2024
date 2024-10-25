@@ -363,6 +363,81 @@ form {
   margin: 0 auto;
 }
 
+/* CSS for blog */
+
+/* Styling the blog container */
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between each blog post */
+  max-width: 800px; /* Keeps the layout centered and neat */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling each blog post */
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect on blog posts */
+.blog-post:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog title */
+.blog-post h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Blog date */
+.blog-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Blog description */
+.blog-post p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Styling blog images - making sure they are all the same size */
+.blog-post img {
+  width: 100%; /* Ensures the image takes the full width of the container */
+  height: auto; /* Keeps the aspect ratio */
+  max-height: 300px; /* Max height for all images */
+  object-fit: cover; /* Crops images to fit within the size */
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* "Read More" link styling */
+.blog-link {
+  font-size: 16px;
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto; /* Pushes the link to the bottom of the container */
+}
+
+/* Hover effect for link */
+.blog-link:hover {
+  text-decoration: underline;
+}
+
+
 /* CSS for footer */
 
 .footer {
