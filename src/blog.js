@@ -5,9 +5,9 @@ const blogs = [
         title: "Algorithmic Health Insurance, Fair or Not?",
         date: "10/17/2024",
         description: "Companies are beginning to use algorithms to determine whether insurance claims should be denied or pended for review, is this ok?",
-        image: "algohiring.png",
+        image: "algorithmic-insurance.png",
         imageAlt: "An image of an algorithm",
-        slug: "blogs/algorithmic-hiring.html",
+        slug: "blogs/algorithmic-insurance.html",
     },
     {
         title: "AI Doctors, Who is Responsible?",
@@ -15,7 +15,7 @@ const blogs = [
         description: "We are entering a new age where human doctors may be replaced by AI. However, who bears the responsibility if complications occur?",
         image: "ai-doctor.png",
         imageAlt: "An image of a robot doctor",
-        slug: "blogs/algorithmic-hiring.html",
+        slug: "blogs/ai-doctors.html",
     }
 ];
 // Function to dynamically append blogs to the page
